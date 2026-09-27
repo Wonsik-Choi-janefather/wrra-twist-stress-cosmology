@@ -1,0 +1,95 @@
+{
+  "cross_scale": {
+    "H0_s_inverse": 2.1842852410855023e-18,
+    "a_T_m_s2": 1.1918126691055912e-10,
+    "cH0_m_s2": 6.548322413981453e-10,
+    "claim_boundary": "The forward value uses H0 and f_T, not the galaxy comparison value. It is a conditional WRRA closure under matched response C=1, not a parameter-free cosmological fit.",
+    "external_comparison_a0_m_s2": 1.2007e-10,
+    "external_comparison_percent_difference": 0.7401791367043302,
+    "external_comparison_relative_difference": 0.0074017913670433024,
+    "f_T_input": 0.265,
+    "inferred_f_T_from_paper_rounded_a0": 0.2686534181618261,
+    "matched_response_C": 1.0
+  },
+  "dbi_imported_scaffold": {
+    "claim_boundary": "This reproduces the stated minimal background/sound-speed survival check; it does not replace a Boltzmann-code CMB likelihood analysis.",
+    "density_target_D": 9.991374699182187e-06,
+    "lambda_D": 1.0,
+    "provenance": "Imported covariant Khronon/DBI calculation scaffold; it is not claimed as an original WRRA field-equation derivation.",
+    "r_exact": 9.99132478599749e-06,
+    "r_reported_rounded": 9.9913e-06,
+    "states": {
+      "early_a_1e-5": {
+        "adiabatic_sound_speed_squared": 5.008686515975203e-21,
+        "equation_of_state_w": 5.0043413729850104e-11,
+        "q": 1.0,
+        "scale_factor": 1e-05,
+        "z": 9991324785.997488
+      },
+      "future_relation_a_10": {
+        "adiabatic_sound_speed_squared": 9.991324686170919e-09,
+        "equation_of_state_w": 4.995662368042102e-09,
+        "q": 9.99132478599749e-09,
+        "scale_factor": 10.0,
+        "z": 9.99132478599749e-09
+      },
+      "recombination_a_1_over_1100": {
+        "adiabatic_sound_speed_squared": 2.827272942096203e-09,
+        "equation_of_state_w": 3.759694368198329e-05,
+        "q": 0.9999999971727271,
+        "scale_factor": 0.0009090909090909091,
+        "z": 13298.453290162659
+      },
+      "today_a_1": {
+        "adiabatic_sound_speed_squared": 9.991224958927823e-06,
+        "equation_of_state_w": 4.995637436106653e-06,
+        "q": 9.991324785498791e-06,
+        "scale_factor": 1.0,
+        "z": 9.99132478599749e-06
+      }
+    }
+  },
+  "deterministic": true,
+  "evaluation_chain": {
+    "falsification_conditions": [
+      "independent H0, f_T, and galaxy a_T fail the C=1 relation beyond their uncertainties",
+      "one shared a_T cannot jointly maintain RAR and BTFR across galaxies",
+      "a covariant completion produces unacceptable lensing slip, CMB spectra, growth, or cluster dynamics",
+      "the committed calculations cannot be regenerated from the declared inputs"
+    ],
+    "outputs": [
+      "cross-scale transition acceleration and inverse f_T",
+      "deep-limit RAR samples",
+      "DBI background q, w, and c_ad^2 at declared scale factors"
+    ],
+    "verified_input": [
+      "H0, f_T, C=1, exact SI unit conversion",
+      "external comparison a0 is withheld from the forward calculation",
+      "mu^-1, lambda_D, and the present density fraction for the imported DBI check"
+    ],
+    "wrra_specific_transformation": [
+      "interpret the effective dark component as a twist-stress mass phenotype",
+      "apply the matched-response relation a_T=C c H0 sqrt(f_T/8)",
+      "apply the same a_T to the low-acceleration renderer"
+    ]
+  },
+  "galaxy_deep_limit_demo": {
+    "claim_boundary": "These are transparent equation samples, not a fit to the SPARC catalogue.",
+    "equation": "g=sqrt(a_T*g_b)",
+    "samples": [
+      {
+        "g_b_m_s2": 1e-13,
+        "g_predicted_m_s2": 3.4522639949829896e-12
+      },
+      {
+        "g_b_m_s2": 1e-12,
+        "g_predicted_m_s2": 1.091701730833835e-11
+      },
+      {
+        "g_b_m_s2": 1e-11,
+        "g_predicted_m_s2": 3.452263994982989e-11
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

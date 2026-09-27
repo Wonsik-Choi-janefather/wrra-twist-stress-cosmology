@@ -1,0 +1,10 @@
+result_id,quantity,value,unit,status,claim_class
+XSC-01,H0_SI,2.1842852410855023e-18,s^-1,reproduced,verified input conversion
+XSC-01,cH0,6.548322413981453e-10,m s^-2,reproduced,intermediate output
+XSC-01,a_T,1.1918126691055912e-10,m s^-2,reproduced,WRRA conditional derivation
+XSC-01,external_difference,0.7401791367043302,percent,reproduced,post-calculation comparison
+INV-01,inferred_f_T,0.2686534181618261,dimensionless,reproduced,inverse consistency
+DBI-01,r_exact,9.99132478599749e-6,dimensionless,reproduced,imported scaffold
+DBI-01,q_recombination,0.9999999971727271,dimensionless,reproduced,imported scaffold
+DBI-01,w_recombination,3.759694368198329e-5,dimensionless,reproduced,imported scaffold
+DBI-01,c_ad_squared_recombination,2.827272942096203e-9,dimensionless,reproduced,imported scaffold

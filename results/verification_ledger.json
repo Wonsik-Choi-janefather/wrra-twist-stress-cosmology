@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "evaluation_order": [
+    "verified_input",
+    "wrra_specific_transformation",
+    "output",
+    "falsification_condition",
+    "conclusion"
+  ],
+  "entries": [
+    {
+      "id": "XSC-01",
+      "title": "Cosmology-to-galaxy matched-response closure",
+      "verified_input": {
+        "H0_km_s_Mpc": 67.4,
+        "f_T": 0.265,
+        "matched_response_C": 1.0
+      },
+      "wrra_specific_transformation": "a_T = C c H0 sqrt(f_T/8)",
+      "output": {
+        "a_T_m_s2": 1.1918126691055912e-10,
+        "external_comparison_percent_difference": 0.7401791367043302
+      },
+      "falsification_condition": "Independent H0, f_T, and galactic a_T uncertainty regions do not satisfy the C=1 relation.",
+      "conclusion": "reproduced conditional cross-scale result",
+      "originality_class": "WRRA conditional derivation"
+    },
+    {
+      "id": "INV-01",
+      "title": "Inverse stress-fraction check",
+      "verified_input": {
+        "H0_km_s_Mpc": 67.4,
+        "a_T_m_s2": 1.2e-10,
+        "matched_response_C": 1.0
+      },
+      "wrra_specific_transformation": "f_T = 8 [a_T/(C c H0)]^2",
+      "output": {
+        "f_T": 0.2686534181618261
+      },
+      "falsification_condition": "The inverse implementation fails to recover the forward input within numerical tolerance.",
+      "conclusion": "reproduced inverse consistency check",
+      "originality_class": "WRRA conditional derivation"
+    },
+    {
+      "id": "DBI-01",
+      "title": "Minimum early-universe survival check",
+      "verified_input": {
+        "H0_km_s_Mpc": 67.4,
+        "omega_stress_today": 0.265,
+        "mu_inverse_Mpc": 22.3,
+        "lambda_D": 1.0
+      },
+      "wrra_specific_transformation": "WRRA assigns the effective component to twist stress; the background evolution is evaluated with an imported Khronon/DBI scaffold.",
+      "output": {
+        "r_exact": 9.99132478599749e-6,
+        "w_recombination": 3.759694368198329e-5,
+        "c_ad_squared_recombination": 2.827272942096203e-9
+      },
+      "falsification_condition": "The covariant completion fails CMB, growth, stability, or sound-speed constraints.",
+      "conclusion": "source table reproduced; full likelihood remains open",
+      "originality_class": "imported external scaffold used as a compatibility test"
+    },
+    {
+      "id": "GAL-01",
+      "title": "Shared low-acceleration renderer",
+      "verified_input": {
+        "a_T_source": "XSC-01"
+      },
+      "wrra_specific_transformation": "Use the same a_T in g=sqrt(a_T g_b) and v_f^4=G M_b a_T.",
+      "output": {
+        "forms": [
+          "radial acceleration relation",
+          "baryonic Tully-Fisher relation"
+        ]
+      },
+      "falsification_condition": "One shared a_T cannot fit both relations across the galaxy population.",
+      "conclusion": "analytical forms implemented; catalogue likelihood open",
+      "originality_class": "established AQUAL/MOND renderer embedded in WRRA"
+    }
+  ]
+}

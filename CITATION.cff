@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite the software release and the linked WRRA records."
+title: "WRRA Twist-Stress Cosmology Reproducibility Package"
+type: software
+authors:
+  - family-names: Choi
+    given-names: Wonsik
+    email: janefather@gmail.com
+version: 1.0.0
+date-released: 2026-09-27
+repository-code: "https://github.com/Wonsik-Choi-janefather/wrra-twist-stress-cosmology"
+url: "https://github.com/Wonsik-Choi-janefather/wrra-twist-stress-cosmology"
+license: MIT
+references:
+  - type: report
+    title: "Minimal Computing Cosmology"
+    authors:
+      - family-names: Choi
+        given-names: Wonsik
+    doi: "10.5281/zenodo.22660185"
+  - type: report
+    title: "WRRA Core"
+    authors:
+      - family-names: Choi
+        given-names: Wonsik
+    doi: "10.5281/zenodo.22650956"
+keywords:
+  - WRRA
+  - Wonsik Reality Renderer Architecture
+  - twist stress
+  - dark matter
+  - mass phenotype
+  - cosmology
+  - MOND
+  - radial acceleration relation
+  - reproducible research
