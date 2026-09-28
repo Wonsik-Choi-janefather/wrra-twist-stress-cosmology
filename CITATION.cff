@@ -13,7 +13,7 @@ url: "https://github.com/Wonsik-Choi-janefather/wrra-twist-stress-cosmology"
 license: MIT
 references:
   - type: report
-    title: "Minimal Computing Cosmology"
+    title: "Minimal Computing Cosmology 2.1"
     authors:
       - family-names: Choi
         given-names: Wonsik
