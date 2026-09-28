@@ -150,8 +150,11 @@ results reproduced here.
 
 ## Related WRRA records
 
-- Related historical preprint *Minimal Computing Cosmology 2.1*: <https://doi.org/10.5281/zenodo.22660185>. This DOI is not a citation for MCC 2.3.2 or for this software package.
+- This paper: <https://doi.org/10.5281/zenodo.22700557>
 - WRRA Core: <https://doi.org/10.5281/zenodo.22650956>
+- Galactic disk paper: <https://doi.org/10.5281/zenodo.23003875>
+- Upstream accumulated-twist cosmology: <https://github.com/Wonsik-Choi-janefather/wrra-finite-boundaryless-twist-cosmology>
+- Related historical preprint *Minimal Computing Cosmology 2.1*: <https://doi.org/10.5281/zenodo.22660185>. This DOI is not a citation for MCC 2.3.2 or for this software package.
 
 ## Citation and license
 
