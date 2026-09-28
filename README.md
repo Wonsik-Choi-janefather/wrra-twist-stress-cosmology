@@ -150,7 +150,7 @@ results reproduced here.
 
 ## Related WRRA records
 
-- Minimal Computing Cosmology: <https://doi.org/10.5281/zenodo.22660185>
+- Related historical preprint *Minimal Computing Cosmology 2.1*: <https://doi.org/10.5281/zenodo.22660185>. This DOI is not a citation for MCC 2.3.2 or for this software package.
 - WRRA Core: <https://doi.org/10.5281/zenodo.22650956>
 
 ## Citation and license
