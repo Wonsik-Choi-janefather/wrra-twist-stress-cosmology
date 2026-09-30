@@ -161,3 +161,18 @@ results reproduced here.
 Citation metadata are in CITATION.cff. Code is released under the MIT License.
 Original documentation, result data, and the source report are released under
 CC BY 4.0. See LICENSES.md.
+
+---
+
+## Central corpus index
+
+This work is part of the open research and publishing corpus of **Wonsik Choi (최원식)**.
+
+- [Central Research & Publications Index](https://github.com/Wonsik-Choi-janefather/minimal-computing-cosmology-research-history/blob/main/PUBLICATIONS.md)
+- [Public GitBook index](https://independent-research.gitbook.io/mcc-and-wrra-research-history/publications)
+- [Machine-readable corpus index](https://github.com/Wonsik-Choi-janefather/minimal-computing-cosmology-research-history/blob/main/works.json)
+- Identity: [janefather@gmail.com](mailto:janefather@gmail.com)
+
+Rights remain those stated in this repository and its linked archival record.
+
+**Copyright (C) 2026 Wonsik Choi**
