@@ -1,0 +1,79 @@
+{
+  "version": "0.8",
+  "date": "2026-11-18",
+  "scope": "conditional periodic toy; original 28-mode GR not run",
+  "inputs": {
+    "N": 1015000,
+    "alpha": 1.8996877935161325,
+    "h": 1.4476744689338703,
+    "gamma": [
+      14.134725141734695,
+      21.022039638771556,
+      25.01085758014569,
+      30.424876125859512
+    ],
+    "bins": 128,
+    "metric_amplitude": 1e-8,
+    "SI_energy_fractions": [
+      0.0493,
+      0.265,
+      0.6857
+    ],
+    "I": 5,
+    "q_today": 4.9
+  },
+  "address_ledger": {
+    "P": 0.050000000000000155,
+    "D": 0.26799999999999985,
+    "R": 0.682000000000002,
+    "R_prime": 0.674227036122008,
+    "R_odd": 0.00777296387799199
+  },
+  "local": {
+    "phi_min": -5.7202542728128274e-9,
+    "phi_max": 1e-8,
+    "poisson_max_relative_residual": 3.7980988376540695e-14,
+    "independent_poisson_l2_relative_residual": 1.338085121214686e-13,
+    "local_q_min": 4.89999999902,
+    "local_q_max": 4.900000000560585
+  },
+  "outputs": [
+    {
+      "a": 0.02,
+      "q": 2.474747474747475,
+      "r": 2.525252525252525
+    },
+    {
+      "a": 0.1,
+      "q": 4.1525423728813555,
+      "r": 0.8474576271186445
+    },
+    {
+      "a": 0.6119598068,
+      "q": 4.838636962722839,
+      "r": 0.16136303727716061
+    },
+    {
+      "a": 1,
+      "q": 4.9,
+      "r": 0.09999999999999964
+    },
+    {
+      "a": 2,
+      "q": 4.94949494949495,
+      "r": 0.050505050505050164
+    }
+  ],
+  "tests": {
+    "original": "12/12",
+    "independent": "12/12",
+    "two_process_byte_identical": true
+  },
+  "limitations": [
+    "amplitude declared not derived",
+    "FLRW background inherited",
+    "local static potential",
+    "original 28-mode GR not reproduced",
+    "no autonomous feedback"
+  ]
+}
