@@ -1,0 +1,31 @@
+name: MCC 3.0 finite toy pre-paper audit
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'evidence/mcc3-toy-v0.8/**'
+      - '.github/workflows/mcc3-toy-audit.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: evidence/mcc3-toy-v0.8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install numpy
+      - name: Run toy calculation
+        run: OPENBLAS_NUM_THREADS=1 python mcc3_local_toy_v08.py > reproduced_stdout.json
+      - name: Independent audit, including all 128 spatial bins and potential values
+        run: OPENBLAS_NUM_THREADS=1 python independent_audit.py
+      - name: Upload complete machine-readable evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: mcc3-toy-v08-full-audit
+          path: |
+            evidence/mcc3-toy-v0.8/reproduced_stdout.json
+            evidence/mcc3-toy-v0.8/audit_full.json
+            evidence/mcc3-toy-v0.8/reference_results.json
