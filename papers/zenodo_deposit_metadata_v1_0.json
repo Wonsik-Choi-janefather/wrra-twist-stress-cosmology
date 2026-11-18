@@ -1,0 +1,36 @@
+{
+  "title": "Computational Closure of a Finite-Source Cosmological Toy Model: From 1,015,000 Arithmetic Addresses to Spatial Geometry and Effective Quantization",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {
+      "name": "Choi, Wonsik",
+      "affiliation": "Independent Researcher, Republic of Korea"
+    }
+  ],
+  "description": "<p>An executable finite-source cosmological toy model connects 1,015,000 weighted arithmetic addresses to a 128-cell periodic spatial receiver, a weak spatial metric, relational distance, and an effective quantization readout. It reproduces the calibrated P/D/R fractions (5%, 26.8%, 68.2%) and passes 12 internal and 12 independent audit checks. The independent Fourier residual is approximately 1.3381e-13. This is conditional one-way computational closure, not a first-principles derivation of expansion or quantum mechanics, and not the original MCC 3.0 28-component GR solver.</p>",
+  "keywords": [
+    "Minimal Computing Cosmology",
+    "Wonsik Reality Renderer Architecture",
+    "finite-source cosmology",
+    "computational closure",
+    "emergent spatial geometry",
+    "arithmetic address weighting",
+    "finite information",
+    "periodic spatial receiver",
+    "Poisson-type spatial response",
+    "effective quantization",
+    "reproducible computational physics",
+    "cosmological toy model"
+  ],
+  "language": "eng",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Wonsik-Choi-janefather/wrra-twist-stress-cosmology/blob/main/papers/MCC3_Finite_Source_Computational_Closure_v1_0_EN.md",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Deposit not yet created. Attach the manuscript file before publication; confirm authorship metadata and license."
+}
